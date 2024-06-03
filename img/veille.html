@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio de Mouhamad FALL</title>
+    <link rel="shortcut icon" href="img/pixelate.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/deuxieme.css" />
+    <link rel="stylesheet" href="css/veille.css" />
+    <style type="text/css">
+      body {
+        cursor: url("data:image/x-icon;base64,AAACAAEAICACAAAAAwAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAGAAAADAAAAAwAAAAYAAABGAAAAbAAAAHwAAAB/gAAAfwAAAH4AAAB8AAAAeAAAAHAAAABgAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////////////////////////////////////////////////////5////8P////D////h///94f///MP///xD///8B////AB///wA///8Af///AP///wH///8D////B////w////8f////P/////////////////////////8="),
+          auto;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="sommaire">
+      <div class="titre">
+        <h2>
+          <a href="deuxieme.html" target="_blank" rel="noopener noreferrer"
+            >Portfolio de Mouhamad FALL</a
+          >
+        </h2>
+      </div>
+
+      <div class="rubrique">
+        <ul>
+          <li>
+            <a href="entreprise.html"> Entreprise </a>
+          </li>
+
+          <li>
+            <a href="real.html"> Réalisations </a>
+          </li>
+
+          <li>
+            <a href="veille.html"> Veille </a>
+          </li>
+
+          <li>
+            <a href="bilan.html"> Bilan </a>
+          </li>
+
+          <!-- <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li> -->
+        </ul>
+      </div>
+    </div>
+
+    <div class="title-veille">
+      <h1>Bienvenue sur ma veille :</h1>
+    </div>
+
+    <div class="veille-pres">
+      Ma veille portera sur le sujet de la l'informatique dans le domaine de la
+      santé.
+    </div>
+
+    <div class="tri">
+      <select class="tri_art" name="order" onchange="sortArticles(event)">
+        <option value="ordre_alpha">Ordre alphabétique</option>
+
+        <option value="note">Meilleures notes</option>
+
+        <option value="date">Date</option>
+      </select>
+    </div>
+
+    <div class="veille-logo">
+      <div class="card">
+        <div class="card-info">
+          <h2 class="article-titre">
+            Une imprimante 3D donne naissance à une main
+          </h2>
+          <ul class="infos">
+            <li class="auteur">Auteur : Aurelie Duhamel</li>
+            <li><span class="date" data-date="11/23/2023">11/23/2023</span></li>
+            <li class="note" data-note="2">
+              <span class="stars">&#9733;&#9733;</span>
+            </li>
+          </ul>
+          <p class="description">
+            Des chercheurs suisses, aidés d’une start-up américaine, sont
+            parvenus à imprimer une main de robot avec des os, des ligaments et
+            des tendons en une seule fois grâce à des matériaux rigides et
+            élastiques.
+          </p>
+
+          <p class="description"></p>
+        </div>
+        <div class="foot_veille">
+          <hr class="hr-foot2" />
+          <p>Pour en savoir plus sur le projet cliqué ci-dessous</p>
+          <a
+            href="https://www.caminteresse.fr/sciences/une-imprimante-3d-donne-naissance-aune-main-11191191/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-solid fa-angle-right" style="color: #4ec904"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-info">
+          <h2 class="article-titre">
+            Le robot Ted-i permet à un élève malade de suivre ses cours au
+            collège
+          </h2>
+          <ul class="infos">
+            <li class="auteur">Auteur : Lucas Brunner</li>
+            <li><span class="date" data-date="11/26/2023">11/26/2023</span></li>
+            <li class="note" data-note="3">
+              <span class="stars">&#9733;&#9733;&#9733;</span>
+            </li>
+          </ul>
+          <p class="description">
+            Un robot du nom de Ted-i offre une nouvelle perspective éducative
+            aux élèves absents, leur permettant de participer aux cours à
+            distance. Un équipement fourni uniquement pour des situations
+            médicales graves et de longue durée, dont bénéficie un élève du
+            collège Pierre-et-Marie-Curie d’Héricourt.
+          </p>
+          <div class="foot_veille">
+            <hr class="hr-foot2" />
+            <p>Pour en savoir plus sur le projet cliqué ci-dessous</p>
+            <a
+              href="https://www.estrepublicain.fr/education/2023/11/26/ted-i-un-robot-qui-permet-aux-eleves-malades-de-retrouver-la-classe"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-solid fa-angle-right" style="color: #4ec904"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-info">
+          <h2 class="article-titre">
+            L’hôpital d’Ajaccio se dote d’un robot chirurgical qui va améliorer
+            le confort des patients
+          </h2>
+          <ul>
+            <li><span class="date" data-date="03/25/2024">10/25/2024</span></li>
+            <li class="note" data-note="3">
+              <span class="stars">&#9733;&#9733;&#9733;</span>
+            </li>
+          </ul>
+          <p class="description">
+            Un équipement de près de 2 millions d'euros qui va grandement
+            accroitre le confort post opératoire des patients et booster
+            l'attractivité du centre hospitalier auprès des jeunes chirurgiens.
+          </p>
+        </div>
+        <div class="foot_veille">
+          <hr class="hr-foot2" />
+          <p>Pour en savoir plus sur le projet cliqué ci-dessous</p>
+          <a
+            href="https://www.corsenetinfos.corsica/L-hopital-d-Ajaccio-se-dote-d-un-robot-chirurgical-qui-va-ameliorer-le-confort-des-patients_a77146.html "
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-solid fa-angle-right" style="color: #4ec904"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-info">
+          <h2 class="article-titre">
+            Saint-Nazaire : être opéré par un robot, c’est déjà pour aujourd’hui
+          </h2>
+          <ul>
+            <li><span class="date" data-date="11/27/2023">11/27/2023</span></li>
+            <li class="note" data-note="3">
+              <span class="stars">&#9733;&#9733;&#9733;</span>
+            </li>
+          </ul>
+          <p class="description">
+            En avril dernier, le robot Da Vinci X de la société Intuitive
+            effectuait sa première intervention à la Clinique Mutualiste de
+            l'Estuaire à Saint-Nazaire. Une soixantaine d'opérations ont depuis
+            été réalisées en chirurgie digestive et urologique. Le Robot Day
+            organisé le 15 décembre prochain offrira l'opportunité de découvrir
+            cet outil et d'en prendre les commandes.
+          </p>
+          <div class="foot_veille">
+            <hr class="hr-foot2" />
+            <p>Pour en savoir plus sur le projet cliqué ci-dessous</p>
+            <a
+              href="https://www.saintnazairenews.fr/news/saint-nazaire-etre-opere-par-un-robot-c-est-deja-pour-aujourd-hui"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-solid fa-angle-right" style="color: #4ec904"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-info">
+          <h2 class="article-titre">
+            Cyberattaques contre France Travail et les mutuelles de santé
+          </h2>
+          <ul>
+            <li class="auteur">Auteur : Martin Untersinger</li>
+            <li><span class="date" data-date="03/14/2024">03/14/2024</span></li>
+            <li class="note" data-note="1">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </li>
+          </ul>
+          <p class="description">
+            Ces dernières semaines, des cyberattaques ont atteint les données de
+            dizaines de millions de personnes en France. Martin Untersinger a
+            rappelé les risques et les conseils à suivre pour sécuriser ses
+            données.
+          </p>
+          <div class="foot_veille">
+            <hr class="hr-foot2" />
+            <p>Pour en savoir plus sur le projet cliqué ci-dessous</p>
+            <a
+              href="https://www.lemonde.fr/pixels/live/2024/03/14/cyberattaques-contre-france-travail-et-les-mutuelles-de-sante-quels-risques-pour-leurs-usagers-posez-vos-questions_6221983_4408996.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-solid fa-angle-right" style="color: #4ec904"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-info">
+          <h2 class="article-titre">
+            Spacemira le robot chirurgical de l'espace controle à distance
+          </h2>
+          <ul>
+            <li class="auteur">Auteur : Cécile Dubois</li>
+            <li><span class="date" data-date="02/25/2024">02/25/2024</span></li>
+            <li class="note" data-note="1">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </li>
+          </ul>
+          <p class="description">
+            Pour la première fois, des chirurgiens ont réussi à manipuler à
+            distance un robot chirurgical dans la Station spatiale
+            internationale depuis la Terre. SpaceMIRA ouvre la voie à des
+            possibilités médicinales cruciales pour les voyages spatiaux de
+            longue durée, notamment vers Mars. spaceMIRA: un pas important pour
+            la chirurgie dans l'espace
+          </p>
+          <div class="foot_veille">
+            <hr class="hr-foot2" />
+            <p>Pour en savoir plus sur le projet cliqué ci-dessous</p>
+            <a
+              href="https://www.n-3ds.com/spacemira-le-robot-chirurgical-de-lespace-controle-a-distance/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-solid fa-angle-right" style="color: #4ec904"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-info">
+          <h2 class="article-titre">
+            Des données des médecins et des patients potentiellement dans la
+            nature suite à la cyberattaque de l’hôpital d’Armentières
+          </h2>
+          <ul>
+            <li><span class="date" data-date="02/26/2024">02/25/2024</span></li>
+            <li class="note" data-note="1">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </li>
+          </ul>
+          <p class="description">
+            Des données qui pourraient concerner des patients du centre
+            hospitalier d'Armentières (Nord), victime d'une cyberattaque le 11
+            février, ont été "rendues accessibles" dimanche par des pirates
+            informatiques, a-t-on appris lundi auprès du centre hospitalier.
+          </p>
+          <div class="foot_veille">
+            <hr class="hr-foot2" />
+            <p>Pour en savoir plus sur le projet cliqué ci-dessous</p>
+            <a
+              href="https://www.whatsupdoc-lemag.fr/article/des-donnees-des-medecins-et-des-patients-potentiellement-dans-la-nature-suite-la"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-solid fa-angle-right" style="color: #4ec904"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="hr-contact" />
+
+    <div class="contact">
+      <a
+        href="http://linkedin.com/in/fall-mouhamad"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-linkedin fa-2xl" style="color: #4482ee"></i>
+      </a>
+      <i class="fa-brands fa-github fa-2xl" style="color: #ffffff"></i>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/38ebe1d5e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="JS/veille.js"></script>
+  </body>
+</html>
