@@ -1,0 +1,125 @@
+html{
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.titre-rugby {
+  color: rgb(78, 201, 67);
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  padding-top: 65px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 44ch;
+  display: flex;
+  text-align: center;
+}
+
+
+.rugby-pres {
+  color: rgb(78, 201, 67);
+  width: 52ch;
+  /* animation: typing 2s steps(22), blink 0.5s step-end infinite alternate; */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+}
+
+.info-global {
+  text-align: center;
+}
+
+.global-rugby {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 6%; */
+}
+
+.projet_pres {
+  margin-top: 10px;
+    color: rgb(78, 201, 67);
+    align-items: center;
+    text-align: justify;
+}
+
+.projet_pres img{
+  height: 140px;
+  margin-left: 40%;
+  margin-top: 5%;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Crée un espace égal entre les deux éléments */
+  align-items: center; /* Centre les éléments verticalement */
+  max-width: 975px; /* ou la largeur souhaitée */
+  margin: 0 auto; /* Centre le conteneur horizontalement */
+  text-align: center;
+  gap: 13rem;
+  margin-top: 10%;
+}
+
+
+.code_rugby{
+  margin-top: 10%;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.texte_rugby{
+  margin-top: 10%;
+}
+
+.json_rugby{
+  margin-top: 10%;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.texte_json{
+  margin-top: 10%;
+}
+
+
+.page_rugby{
+  margin-top: 10%;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.texte_page{
+  margin-top: 10%;
+}
+
+
+.bdd_rugby{
+  margin-top: 10%;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.bdd_rugby{
+  height: 450px;
+}
+
+.texte_bdd{
+  margin-top: 10%;
+}
+
+.mobile_rugby{
+  margin-top: 10%;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.texte_mobile{
+  margin-top: 10%;
+}
+
+.page_rugby{
+  height: 240px;
+}

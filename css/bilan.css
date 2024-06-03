@@ -1,0 +1,42 @@
+.title-bilan {
+  color: rgb(78, 201, 67);
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  padding-top: 65px;
+  white-space: nowrap;
+  overflow: hidden;
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+  width: 105ch;
+  display: flex;
+  margin-left: 1%;
+}
+
+.txt_img {
+  display: flex;
+  justify-content: space-around; /* Pour espacer les éléments */
+  align-items: center;
+}
+
+.pixel,
+.txt {
+  width: 45%; /* Définir la largeur de chaque élément */
+}
+
+.txt {
+  text-align: center;
+  margin-left: 10px; /* Ajouter de la marge entre l'image et le texte */
+}
+
+.cnil {
+  align-items: center;
+  margin-top: 10px;
+}
+
+.stress {
+  color: rgb(196, 11, 11);
+}
+
+.soft {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8%;
+}

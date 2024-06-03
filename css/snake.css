@@ -1,0 +1,26 @@
+.menu {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cod {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.read {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+p {
+  text-align: center;
+}
+
+
+.red{
+    height: 325px
+}
