@@ -1,0 +1,538 @@
+/* =====================================================================
+   RESPONSIVE — chargé en DERNIER sur toutes les pages.
+   Le design ordinateur (> 1024px) n'est pas modifié : tout ce qui suit
+   ne fait qu'adapter l'affichage aux tablettes et aux téléphones.
+   ===================================================================== */
+
+/* Bouton burger : caché sur ordinateur */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(78, 201, 67);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.sommaire.open .burger span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.sommaire.open .burger span:nth-child(2) {
+  opacity: 0;
+}
+.sommaire.open .burger span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* =====================================================================
+   TABLETTE (≤ 1024px)
+   ===================================================================== */
+@media screen and (max-width: 1024px) {
+  /* Base : tailles calculées bordures comprises, pas de scroll horizontal */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    object-fit: contain; /* évite les images déformées */
+  }
+
+  /* Cartes : 2 par ligne au lieu de 3-4 */
+  .card,
+  .cnil,
+  .mission-vignette1,
+  .mission-vignette2,
+  .logo2,
+  .logo3 {
+    width: 45%;
+    max-width: 45%;
+    padding: 30px;
+  }
+
+  .carte,
+  .certifications,
+  .soft,
+  .mission-vignettes,
+  .veille-logo {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  /* Écart énorme entre texte et image dans les pages projets */
+  .container {
+    gap: 3rem;
+    padding: 0 1.5rem;
+  }
+
+  /* Lignes "image + texte" des pages projets : l'image peut rétrécir */
+  .charte_graphique,
+  .site,
+  .connexion,
+  .patrimoine,
+  .trello,
+  .code_rugby,
+  .json_rugby,
+  .page_rugby,
+  .bdd_rugby,
+  .mobile_rugby,
+  .user_case,
+  .maquette,
+  .metier,
+  .bdd,
+  .trello_france,
+  .gitlab_france,
+  .item_france,
+  .image_france,
+  .txt-readme,
+  .menu,
+  .cod,
+  .read {
+    gap: 2rem;
+    padding: 0 1.5rem;
+  }
+
+  .charte_graphique > *,
+  .site > *,
+  .connexion > *,
+  .patrimoine > *,
+  .trello > *,
+  .code_rugby > *,
+  .json_rugby > *,
+  .page_rugby > *,
+  .bdd_rugby > *,
+  .mobile_rugby > *,
+  .user_case > *,
+  .maquette > *,
+  .metier > *,
+  .bdd > *,
+  .trello_france > *,
+  .gitlab_france > *,
+  .item_france > *,
+  .image_france > *,
+  .txt-readme > *,
+  .menu > *,
+  .cod > *,
+  .read > * {
+    min-width: 0;
+  }
+
+  .charte_graphique img,
+  .connexion img,
+  .patrimoine img,
+  .trello img,
+  .trello_france img,
+  .image_france img {
+    height: auto;
+    max-height: 400px;
+  }
+
+  /* Timeline : on retire le décalage "à la main" */
+  .tl-left {
+    left: 0;
+  }
+}
+
+/* =====================================================================
+   MOBILE / PETITE TABLETTE (≤ 768px)
+   ===================================================================== */
+@media screen and (max-width: 768px) {
+  /* ---------- Barre de navigation + burger ---------- */
+  .sommaire {
+    height: auto;
+    min-height: 56px;
+    flex-wrap: wrap;
+    padding: 0 12px;
+  }
+
+  .sommaire .titre {
+    flex: 1;
+    margin-left: 0;
+  }
+
+  .sommaire .titre h2 {
+    font-size: 1.15rem;
+    margin: 0;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .rubrique {
+    display: none;
+    flex-basis: 100%;
+  }
+
+  .sommaire.open .rubrique {
+    display: block;
+  }
+
+  .rubrique ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    margin: 0;
+    padding: 0 0 12px;
+  }
+
+  .rubrique a {
+    display: block;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+
+  .rubrique a:hover {
+    padding: 10px; /* plus de "saut" au survol */
+  }
+
+  /* ---------- Titres / textes avec effet machine à écrire ----------
+     L'effet nécessite une seule ligne (nowrap) : sur mobile le texte
+     dépasse l'écran, donc on le laisse revenir à la ligne. */
+  .acceuil,
+  .txt_de_pres,
+  .title-bilan,
+  .title-entreprise,
+  .entreprise-pres,
+  .title-realis,
+  .realis-pres,
+  .title-veille,
+  .veille-pres,
+  .titre-france,
+  .france-pres,
+  .titre-pokedex,
+  .pokedex-pres,
+  .titre-rugby,
+  .rugby-pres,
+  .titre-skypiea,
+  .skypiea-pres,
+  .titre-sugar,
+  .sugar-pres,
+  .titre_txt,
+  .txt_pres,
+  .typing-demo,
+  .txt-button {
+    width: auto;
+    max-width: 100%;
+    white-space: normal;
+    overflow: visible;
+    animation: none;
+    border-right: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 0;
+  }
+
+  .acceuil,
+  .title-bilan,
+  .title-entreprise,
+  .title-realis,
+  .title-veille,
+  .titre-france,
+  .titre-pokedex,
+  .titre-rugby,
+  .titre-skypiea,
+  .titre-sugar,
+  .titre_txt {
+    padding-top: 70px;
+  }
+
+  h1 {
+    font-size: clamp(1.6rem, 7vw, 2.2rem);
+  }
+
+  /* ---------- Page d'accueil (index.html) ---------- */
+  .typing-demo {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+    text-align: center;
+  }
+
+  .txt-button {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  /* ---------- Blocs côte à côte → empilés ---------- */
+  .carte,
+  .certifications,
+  .hobbies,
+  .soft,
+  .txt_img,
+  .info-global,
+  .container,
+  .charte_graphique,
+  .site,
+  .connexion,
+  .patrimoine,
+  .trello,
+  .code_rugby,
+  .json_rugby,
+  .page_rugby,
+  .bdd_rugby,
+  .mobile_rugby,
+  .user_case,
+  .maquette,
+  .metier,
+  .bdd,
+  .trello_france,
+  .gitlab_france,
+  .item_france,
+  .image_france,
+  .txt-readme,
+  .menu,
+  .cod,
+  .read,
+  .realisations,
+  .mission-vignettes,
+  .veille-logo,
+  .presentation,
+  .retour {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .container,
+  .charte_graphique,
+  .site,
+  .connexion,
+  .code_rugby,
+  .json_rugby,
+  .page_rugby,
+  .bdd_rugby,
+  .mobile_rugby,
+  .user_case,
+  .maquette,
+  .metier,
+  .patrimoine,
+  .bdd,
+  .trello_france,
+  .gitlab_france,
+  .item_france,
+  .txt-readme,
+  .menu,
+  .cod,
+  .read {
+    margin-top: 2.5rem;
+  }
+
+  /* Les textes à côté des images n'ont plus besoin de grosse marge */
+  .texte_charte,
+  .texte_connexion,
+  .texte_maquette,
+  .texte_patrimoine,
+  .texte_bdd,
+  .texte_json,
+  .texte_page,
+  .texte_mobile,
+  .texte_rugby,
+  .texte_france,
+  .texte_trello,
+  .txt_rdtxt {
+    margin-top: 0;
+  }
+
+  .retour_link {
+    margin-left: 0;
+  }
+
+  .projet_pres {
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  /* ---------- Images à hauteur fixe → fluides ---------- */
+  .charte_graphique img,
+  .connexion img,
+  .patrimoine img,
+  .trello img,
+  .trello_france img,
+  .image_france img,
+  .img_pokedex img,
+  .red,
+  .bdd_rugby img,
+  .page_rugby img {
+    height: auto;
+    max-height: 60vh;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .projet_pres img,
+  .loc,
+  .kili-diag {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img-pixelate {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  /* ---------- Cartes : pleine largeur ---------- */
+  .card,
+  .cnil,
+  .mission-vignette1,
+  .mission-vignette2,
+  .logo2,
+  .logo3,
+  .pixel,
+  .txt {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    padding: 24px;
+    border-radius: 24px;
+  }
+
+  .cnil img {
+    height: 110px;
+  }
+
+  .checks {
+    gap: 12px;
+    text-align: left;
+  }
+
+  .lorem2 {
+    margin-top: 1.5rem;
+  }
+
+  /* Icônes de langages : retour à la ligne si besoin */
+  .icon-code,
+  .icons1,
+  .icons4 {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  /* ---------- Séparateurs / espacements ---------- */
+  .hr-parc,
+  .hr-contact,
+  .hr-real,
+  .hr-veille {
+    width: 50%;
+  }
+
+  .about {
+    padding-top: 3rem;
+  }
+
+  .hobbies-pres img,
+  .hobbies-pres3 img {
+    height: 100px;
+  }
+
+  .contact {
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+
+  .contact-real {
+    margin-top: 3rem;
+  }
+
+  /* ---------- Timeline "À propos" (une seule colonne) ---------- */
+  .tl::after {
+    left: 31px;
+  }
+
+  .tl-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 16px;
+  }
+
+  .tl-container::before {
+    left: 60px;
+    right: auto;
+    border: medium solid #fff;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fff transparent transparent;
+  }
+
+  .tl-left,
+  .tl-right {
+    left: 0;
+  }
+
+  .tl-left::after,
+  .tl-right::after {
+    left: 15px;
+  }
+
+  .tl-content {
+    padding: 16px 20px;
+  }
+
+  /* ---------- Page Réalisations : boutons ---------- */
+  .boutons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 16px;
+  }
+
+  .prem,
+  .deux {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+/* =====================================================================
+   PETITS TÉLÉPHONES (≤ 480px)
+   ===================================================================== */
+@media screen and (max-width: 480px) {
+  .card,
+  .cnil,
+  .mission-vignette1,
+  .mission-vignette2,
+  .logo2,
+  .logo3 {
+    padding: 18px;
+    border-width: 4px;
+  }
+
+  .sommaire .titre h2 {
+    font-size: 1rem;
+  }
+
+  .hr-parc,
+  .hr-contact,
+  .hr-real,
+  .hr-veille {
+    width: 70%;
+  }
+}
